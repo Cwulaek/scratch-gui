@@ -1,10 +1,9 @@
 scratch-gui modified for use in [TurboWarp](https://turbowarp.org/)
+Also, with some addons I prefer to use.
 
-## Setup
+## Try it out
 
-See https://docs.turbowarp.org/development/getting-started to setup the complete TurboWarp environment.
-
-If you just want to play with the GUI then it's the same process as upstream scratch-gui.
+You can try out the latest version of TurboWarp's modified scratch-gui at https://cwulaek.github.io/scratch-gui/
 
 ## License
 

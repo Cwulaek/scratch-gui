@@ -81,4 +81,6 @@ export default {
   "tw-disable-cloud-variables": () => import(/* webpackChunkName: "addon-entry-tw-disable-cloud-variables" */ "../addons/tw-disable-cloud-variables/_runtime_entry.js"),
   "tw-disable-compiler": () => import(/* webpackChunkName: "addon-entry-tw-disable-compiler" */ "../addons/tw-disable-compiler/_runtime_entry.js"),
   "editor-stepping": () => import(/* webpackChunkName: "addon-entry-editor-stepping" */ "../addons/editor-stepping/_runtime_entry.js"),
+  "show-argument-name": () => import(/* webpackChunkName: "addon-entry-show-argument-name" */ "../addons/show-argument-name/_runtime_entry.js"),
+  "dim-empty-cells": () => import(/* webpackChunkName: "addon-entry-dim-empty-cells" */ "../addons/dim-empty-cells/_runtime_entry.js"),
 };

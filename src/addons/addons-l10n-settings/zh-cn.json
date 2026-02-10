@@ -401,5 +401,9 @@
     "hide-stage/@name": "隐藏舞台和角色窗格",
     "editor-stepping/@description": "项目运行时高亮正在运行的积木",
     "editor-stepping/@name": "给运行中的积木显示边框",
-    "editor-stepping/@settings-name-highlight-color": "高亮色"
+    "editor-stepping/@settings-name-highlight-color": "高亮色",
+    "show-argument-name/@description": "在编辑器中右键点击函数参数时显示参数名称。",
+    "show-argument-name/@name": "显示参数名称",
+    "dim-empty-cells/@description": "使空单元格在工作区变暗。",
+    "dim-empty-cells/@name": "暗化空单元格"
 }
