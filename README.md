@@ -2,9 +2,30 @@ scratch-gui modified for use in [TurboWarp](https://turbowarp.org/).
 
 Also, with some addons I prefer to use.
 
+## What's New?
+
+1. **Show Argument Name** addon
+
+By default, Scratch can't conveniently show the name of arguments.  
+But with help of this addon, you can easily get the name of arguments.  
+Anytime you hover a argument field, the name of the argument will be shown.
+
+2. **Dim Empty Cells** addon
+
+It's hard to differentiate between empty cells and cells with only spaces.  
+This addon will dim the empty cells, so that you can easily distinguish between empty cells and cells with only spaces.  
+Also, I provided a lot of settings and also a couple of presets for you to choose from.  
+It's able to choose to warning or just simply dim the empty cells btw.
+
+More in coming..
+
 ## Try it out
 
-You can try out the latest version of TurboWarp's modified scratch-gui at https://cwulaek.github.io/scratch-gui/
+You can try out the latest version of TurboWarp's modified scratch-gui at https://cwulaek.github.io/scratch-gui/build/editor.html
+
+I didn't change the latter part of the README.md, which is the license.
+
+-----
 
 ## License
 

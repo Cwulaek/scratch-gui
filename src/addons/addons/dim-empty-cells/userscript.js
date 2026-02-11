@@ -104,6 +104,8 @@ export default async function ({ addon , console }) {
   const isEmpty = (block) => {
     if (
       !block || !block.inputList
+      || !block.inputList[0] || !block.inputList[0].fieldRow
+      || !block.inputList[0].fieldRow[0] || !block.inputList[0].fieldRow[0].getArgTypes()
       || block.inputList[0].fieldRow[0].getArgTypes().includes("dropdown")
     ) {
       return false;
@@ -119,7 +121,6 @@ export default async function ({ addon , console }) {
   ScratchBlocks.BlockSvg.prototype.render = function (opt_bubble) {
     if (this.isShadow() && this.getParent() && !this.getParent().isShadow()) {
       const type = getType(this);
-      console.log(this, type);
       if (isEmpty(this)) {
         setColor(this, addon.settings.get(type));
       } else {

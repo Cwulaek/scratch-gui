@@ -46,6 +46,6 @@
 }
 
 .sa-show-arg-preview-reduce-transparency {
-  background-color: rgba(255, 255, 255, var(--sa-show-arg-preview-transparency));
+  background-color: rgba(255, 255, 255, calc(1 - var(--sa-show-arg-preview-transparency)));
   backdrop-filter: none;
 }
