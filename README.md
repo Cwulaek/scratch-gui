@@ -1,4 +1,5 @@
-scratch-gui modified for use in [TurboWarp](https://turbowarp.org/)
+scratch-gui modified for use in [TurboWarp](https://turbowarp.org/).
+
 Also, with some addons I prefer to use.
 
 ## Try it out

@@ -1,0 +1,17 @@
+:root {
+    --dimEmpyCells-textColor: var(--dimEmptyCells-dim);
+    --dimEmpyCells-opacity: calc(1 - var(--dimEmptyCells-dimTransparency) * 0.01);
+    --dimEmpyCells-warning-textColor: var(--dimEmptyCells-warning);
+    --dimEmpyCells-warning-opacity: calc(1 - var(--dimEmptyCells-warningTransparency) * 0.01);
+}
+
+/* Target the path elements within blocks that have our dim class */
+.sa-dim-empty-text-input .blocklyPath {
+    fill: var(--dimEmpyCells-textColor) !important;
+    fill-opacity: var(--dimEmpyCells-opacity) !important;
+}
+
+.sa-dim-empty-text-input-warning .blocklyPath {
+    fill: var(--dimEmpyCells-warning-textColor) !important;
+    fill-opacity: var(--dimEmpyCells-warning-opacity) !important;
+}

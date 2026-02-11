@@ -82,12 +82,13 @@ const addons = [
     'tw-disable-cloud-variables',
     'tw-disable-compiler',
     'editor-stepping',
-    'show-argument-name'
+    'show-argument-name',
+    'dim-empty-cells'
 ];
 
 const newAddons = [
-    'expanded-backpack',
-    'show-argument-name'
+    'show-argument-name',
+    'dim-empty-cells'
 ];
 
 // eslint-disable-next-line import/no-commonjs

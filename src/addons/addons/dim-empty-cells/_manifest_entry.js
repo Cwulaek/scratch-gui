@@ -24,12 +24,525 @@ const manifest = {
   ],
   "settings": [
     {
+      "dynamic": false,
+      "name": "Ignore Space",
+      "id": "trim",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "dynamic": false,
       "name": "Dim Color",
       "id": "dim",
-      "description": "The color which empty cells dim to.",
       "type": "color",
-      "default": "#88888888",
-      "allowTransparency": true
+      "default": "#FFFFFF",
+      "allowTransparency": false
+    },
+    {
+      "dynamic": false,
+      "name": "Dim Transparency",
+      "id": "dim-transparency",
+      "type": "integer",
+      "default": 20,
+      "min": 0,
+      "max": 100
+    },
+    {
+      "dynamic": false,
+      "name": "Warning Color",
+      "id": "warning",
+      "type": "color",
+      "default": "#FF0000",
+      "allowTransparency": false
+    },
+    {
+      "dynamic": false,
+      "name": "Warning Transparency",
+      "id": "warning-transparency",
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 100
+    },
+    {
+      "dynamic": false,
+      "name": "Text Inputs",
+      "id": "text-input",
+      "type": "select",
+      "potentialValues": [
+        {
+          "name": "Always",
+          "id": "always"
+        },
+        {
+          "name": "On Hover",
+          "id": "on-hover"
+        },
+        {
+          "name": "Not Hovering",
+          "id": "off-hover"
+        },
+        {
+          "name": "Never",
+          "id": "never"
+        },
+        {
+          "name": "Warning",
+          "id": "warning"
+        }
+      ],
+      "default": "always"
+    },
+    {
+      "dynamic": false,
+      "name": "Argument String Numbers",
+      "id": "argument-string-number-input",
+      "type": "select",
+      "potentialValues": [
+        {
+          "name": "Always",
+          "id": "always"
+        },
+        {
+          "name": "On Hover",
+          "id": "on-hover"
+        },
+        {
+          "name": "Not Hovering",
+          "id": "off-hover"
+        },
+        {
+          "name": "Never",
+          "id": "never"
+        },
+        {
+          "name": "Warning",
+          "id": "warning"
+        }
+      ],
+      "default": "always"
+    },
+    {
+      "dynamic": false,
+      "name": "Math Comparing Blocks",
+      "id": "math-comparing-input",
+      "type": "select",
+      "potentialValues": [
+        {
+          "name": "Always",
+          "id": "always"
+        },
+        {
+          "name": "On Hover",
+          "id": "on-hover"
+        },
+        {
+          "name": "Not Hovering",
+          "id": "off-hover"
+        },
+        {
+          "name": "Never",
+          "id": "never"
+        },
+        {
+          "name": "Warning",
+          "id": "warning"
+        }
+      ],
+      "default": "warning"
+    },
+    {
+      "dynamic": false,
+      "name": "Math Calculation Blocks",
+      "id": "math-calculation-input",
+      "type": "select",
+      "potentialValues": [
+        {
+          "name": "Always",
+          "id": "always"
+        },
+        {
+          "name": "On Hover",
+          "id": "on-hover"
+        },
+        {
+          "name": "Not Hovering",
+          "id": "off-hover"
+        },
+        {
+          "name": "Never",
+          "id": "never"
+        },
+        {
+          "name": "Warning",
+          "id": "warning"
+        }
+      ],
+      "default": "always"
+    },
+    {
+      "dynamic": false,
+      "name": "Math String Blocks",
+      "id": "math-string-input",
+      "type": "select",
+      "potentialValues": [
+        {
+          "name": "Always",
+          "id": "always"
+        },
+        {
+          "name": "On Hover",
+          "id": "on-hover"
+        },
+        {
+          "name": "Not Hovering",
+          "id": "off-hover"
+        },
+        {
+          "name": "Never",
+          "id": "never"
+        },
+        {
+          "name": "Warning",
+          "id": "warning"
+        }
+      ],
+      "default": "always"
+    },
+    { 
+      "dynamic": false,
+      "name": "Ids",
+      "id": "id-input",
+      "type": "select",
+      "potentialValues": [
+        {
+          "name": "Always",
+          "id": "always"
+        },
+        {
+          "name": "On Hover",
+          "id": "on-hover"
+        },
+        {
+          "name": "Not Hovering",
+          "id": "off-hover"
+        },
+        {
+          "name": "Never",
+          "id": "never"
+        },
+        {
+          "name": "Warning",
+          "id": "warning"
+        }
+      ],
+      "default": "warning"
+    },
+    {
+      "dynamic": false,
+      "name": "Data Blocks",
+      "id": "data-input",
+      "type": "select",
+      "potentialValues": [
+        {
+          "name": "Always",
+          "id": "always"
+        },
+        {
+          "name": "On Hover",
+          "id": "on-hover"
+        },
+        {
+          "name": "Not Hovering",
+          "id": "off-hover"
+        },
+        {
+          "name": "Never",
+          "id": "never"
+        },
+        {
+          "name": "Warning",
+          "id": "warning"
+        }
+      ],
+      "default": "always"
+    },
+    {
+      "dynamic": false,
+      "name": "Ask Blocks",
+      "id": "ask-input",
+      "type": "select",
+      "potentialValues": [
+        {
+          "name": "Always",
+          "id": "always"
+        },
+        {
+          "name": "On Hover",
+          "id": "on-hover"
+        },
+        {
+          "name": "Not Hovering",
+          "id": "off-hover"
+        },
+        {
+          "name": "Never",
+          "id": "never"
+        },
+        {
+          "name": "Warning",
+          "id": "warning"
+        }
+      ],
+      "default": "always" 
+    },
+    {
+      "dynamic": false,
+      "name": "Control Blocks",
+      "id": "control-input",
+      "type": "select",
+      "potentialValues": [
+        {
+          "name": "Always",
+          "id": "always"
+        },
+        {
+          "name": "On Hover",
+          "id": "on-hover"
+        },
+        {
+          "name": "Not Hovering",
+          "id": "off-hover"
+        },
+        {
+          "name": "Never",
+          "id": "never"
+        },
+        {
+          "name": "Warning",
+          "id": "warning"
+        }
+      ],
+      "default": "warning"
+    },
+    {
+      "dynamic": false,
+      "name": "Sound Blocks",
+      "id": "sound-input",
+      "type": "select",
+      "potentialValues": [
+        {
+          "name": "Always",
+          "id": "always"
+        },
+        {
+          "name": "On Hover",
+          "id": "on-hover"
+        },
+        {
+          "name": "Not Hovering",
+          "id": "off-hover"
+        },
+        {
+          "name": "Never",
+          "id": "never"
+        },
+        {
+          "name": "Warning",
+          "id": "warning"
+        }
+      ],
+      "default": "warning"
+    },
+    {
+      "dynamic": false,
+      "name": "Looks Text Blocks",
+      "id": "looks-text-input",
+      "type": "select",
+      "potentialValues": [
+        {
+          "name": "Always",
+          "id": "always"
+        },
+        {
+          "name": "On Hover",
+          "id": "on-hover"
+        },
+        {
+          "name": "Not Hovering",
+          "id": "off-hover"
+        },
+        {
+          "name": "Never",
+          "id": "never"
+        },
+        {
+          "name": "Warning",
+          "id": "warning"
+        }
+      ],
+      "default": "always" 
+    },
+    {
+      "dynamic": false,
+      "name": "Looks Blocks",
+      "id": "looks-input",
+      "type": "select",
+      "potentialValues": [
+        {
+          "name": "Always",
+          "id": "always"
+        },
+        {
+          "name": "On Hover",
+          "id": "on-hover"
+        },
+        {
+          "name": "Not Hovering",
+          "id": "off-hover"
+        },
+        {
+          "name": "Never",
+          "id": "never"
+        },
+        {
+          "name": "Warning",
+          "id": "warning"
+        }
+      ],
+      "default": "warning" 
+    },
+    {
+      "dynamic": false,
+      "name": "Motion Blocks",
+      "id": "motion-input",
+      "type": "select",
+      "potentialValues": [
+        {
+          "name": "Always",
+          "id": "always"
+        },
+        {
+          "name": "On Hover",
+          "id": "on-hover"
+        },
+        {
+          "name": "Not Hovering",
+          "id": "off-hover"
+        },
+        {
+          "name": "Never",
+          "id": "never"
+        },
+        {
+          "name": "Warning",
+          "id": "warning"
+        }
+      ],
+      "default": "warning" 
+    },
+    {
+      "dynamic": false,
+      "name": "Other Blocks",
+      "id": "other-input",
+      "type": "select",
+      "potentialValues": [
+        {
+          "name": "Always",
+          "id": "always"
+        },
+        {
+          "name": "On Hover",
+          "id": "on-hover"
+        },
+        {
+          "name": "Not Hovering",
+          "id": "off-hover"
+        },
+        {
+          "name": "Never",
+          "id": "never"
+        },
+        {
+          "name": "Warning",
+          "id": "warning"
+        }
+      ],
+      "default": "never" 
+    }
+  ],
+  "presets": [
+    {
+      "name": "Light mode",
+      "id": "default",
+      "description": "The regular ones.",
+      "values": {
+        "dim": "#FFFFFF",
+        "dim-transparency": 75,
+        "warning": "#000000",
+        "warning-transparency": 0,
+        "text-input": "always",
+        "argument-string-number-input": "always",
+        "math-comparing-input": "warning",
+        "math-calculation-input": "always",
+        "math-string-input": "always",
+        "id-input": "warning",
+        "data-input": "always",
+        "control-input": "warning",
+        "sound-input": "warning",
+        "looks-text-input": "always",
+        "looks-input": "warning",
+        "motion-input": "warning",
+        "other-input": "never"
+      }
+    },
+    {
+      "name": "Dark mode",
+      "id": "dark",
+      "description": "The dark ones.",
+      "values": {
+        "dim": "#FFFFFF",
+        "dim-transparency": 75,
+        "warning": "#FF0000",
+        "warning-transparency": 0,
+        "text-input": "always",
+        "argument-string-number-input": "always",
+        "math-comparing-input": "warning",
+        "math-calculation-input": "always",
+        "math-string-input": "always",
+        "id-input": "warning",
+        "data-input": "always",
+        "control-input": "warning",
+        "sound-input": "warning",
+        "looks-text-input": "always",
+        "looks-input": "warning",
+        "motion-input": "warning",
+        "other-input": "never"
+      }
+    },
+    {
+      "name": "Black background mode",
+      "id": "black",
+      "description": "The one suits well with black ground rainbow texts.",
+      "values": {
+        "dim": "#FFFFFF",
+        "dim-transparency": 80,
+        "warning": "#FF0000",
+        "warning-transparency": 40,
+        "text-input": "always",
+        "argument-string-number-input": "always",
+        "math-comparing-input": "warning",
+        "math-calculation-input": "always",
+        "math-string-input": "always",
+        "id-input": "warning",
+        "data-input": "always",
+        "control-input": "warning",
+        "sound-input": "warning",
+        "looks-text-input": "always",
+        "looks-input": "warning",
+        "motion-input": "warning",
+        "other-input": "never"
+      }
     }
   ],
   "dynamicDisable": true,
