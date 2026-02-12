@@ -224,4 +224,13 @@ export default async function ({ addon , console }) {
       capture: true,
     }
   );
+
+  function update() {
+    updateAllBlocks(vm, addon.tab.traps.getWorkspace(), ScratchBlocks);
+  }
+
+  addon.self.addEventListener("disabled", update);
+  addon.self.addEventListener("reenabled", update);
+  addon.settings.addEventListener("change", update);
+  update();
 }

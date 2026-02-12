@@ -24,14 +24,14 @@ const manifest = {
   ],
   "settings": [
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Ignore Space",
       "id": "trim",
       "type": "boolean",
       "default": false
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Dim Color",
       "id": "dim",
       "type": "color",
@@ -39,7 +39,7 @@ const manifest = {
       "allowTransparency": false
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Dim Transparency",
       "id": "dim-transparency",
       "type": "integer",
@@ -48,7 +48,7 @@ const manifest = {
       "max": 100
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Warning Color",
       "id": "warning",
       "type": "color",
@@ -65,7 +65,7 @@ const manifest = {
       "max": 100
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Text Inputs",
       "id": "text-input",
       "type": "select",
@@ -94,7 +94,7 @@ const manifest = {
       "default": "always"
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Argument String Numbers",
       "id": "argument-string-number-input",
       "type": "select",
@@ -123,7 +123,7 @@ const manifest = {
       "default": "always"
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Math Comparing Blocks",
       "id": "math-comparing-input",
       "type": "select",
@@ -152,7 +152,7 @@ const manifest = {
       "default": "warning"
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Math Calculation Blocks",
       "id": "math-calculation-input",
       "type": "select",
@@ -181,7 +181,7 @@ const manifest = {
       "default": "always"
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Math String Blocks",
       "id": "math-string-input",
       "type": "select",
@@ -210,7 +210,7 @@ const manifest = {
       "default": "always"
     },
     { 
-      "dynamic": false,
+      "dynamic": true,
       "name": "Ids",
       "id": "id-input",
       "type": "select",
@@ -239,7 +239,7 @@ const manifest = {
       "default": "warning"
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Data Blocks",
       "id": "data-input",
       "type": "select",
@@ -268,7 +268,7 @@ const manifest = {
       "default": "always"
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Ask Blocks",
       "id": "ask-input",
       "type": "select",
@@ -297,7 +297,7 @@ const manifest = {
       "default": "always" 
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Control Blocks",
       "id": "control-input",
       "type": "select",
@@ -326,7 +326,7 @@ const manifest = {
       "default": "warning"
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Sound Blocks",
       "id": "sound-input",
       "type": "select",
@@ -355,7 +355,7 @@ const manifest = {
       "default": "warning"
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Looks Text Blocks",
       "id": "looks-text-input",
       "type": "select",
@@ -384,7 +384,7 @@ const manifest = {
       "default": "always" 
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Looks Blocks",
       "id": "looks-input",
       "type": "select",
@@ -413,7 +413,7 @@ const manifest = {
       "default": "warning" 
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Motion Blocks",
       "id": "motion-input",
       "type": "select",
@@ -442,7 +442,7 @@ const manifest = {
       "default": "warning" 
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Other Blocks",
       "id": "other-input",
       "type": "select",
@@ -471,7 +471,7 @@ const manifest = {
       "default": "never" 
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Ignore Flyout",
       "id": "ignore-flyout",
       "type": "select",
