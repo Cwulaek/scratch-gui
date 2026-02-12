@@ -88,10 +88,24 @@ export default async function ({ addon , console }) {
   }
 
   const setColor = (block, type) => {
-    if(type === "always" || type === "off-hover") {
+    if (block.isInFlyout && !!block.isInFlyout) {
+      const config = addon.settings.get("ignore-flyout");
+      if (config === "always") {
+        if (type === "warning") {
+          type = "always";
+        }
+      } else if (config === "ignore") {
+        if (type === "warning") {
+          type = "never";
+        }
+      } else if (config === "all") {
+        type = "warning";
+      }
+    }
+    if (type === "always" || type === "off-hover") {
       // Add CSS class to dim the block - CSS will handle the styling
       block.svgGroup_.classList.add("sa-dim-empty-text-input");
-    } else if(type === "warning") {
+    } else if (type === "warning") {
       // Add CSS class for warning style
       block.svgGroup_.classList.add("sa-dim-empty-text-input-warning");
     } else {

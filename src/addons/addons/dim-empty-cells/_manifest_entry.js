@@ -469,6 +469,31 @@ const manifest = {
         }
       ],
       "default": "never" 
+    },
+    {
+      "dynamic": false,
+      "name": "Ignore Flyout",
+      "id": "ignore-flyout",
+      "type": "select",
+      "potentialValues": [
+        {
+          "name": "Ignore Flyout All",
+          "id": "all"
+        },
+        {
+          "name": "Ignore Warnings Only",
+          "id": "ignore"
+        },
+        {
+          "name": "Treat as Dim",
+          "id": "always"
+        },
+        {
+          "name": "Never",
+          "id": "never"
+        }
+      ],
+      "default": "never" 
     }
   ],
   "presets": [
@@ -493,7 +518,8 @@ const manifest = {
         "looks-text-input": "always",
         "looks-input": "warning",
         "motion-input": "warning",
-        "other-input": "never"
+        "other-input": "never",
+        "ignore-flyout": "never"
       }
     },
     {
@@ -517,7 +543,8 @@ const manifest = {
         "looks-text-input": "always",
         "looks-input": "warning",
         "motion-input": "warning",
-        "other-input": "never"
+        "other-input": "never",
+        "ignore-flyout": "never"
       }
     },
     {
@@ -541,7 +568,8 @@ const manifest = {
         "looks-text-input": "always",
         "looks-input": "warning",
         "motion-input": "warning",
-        "other-input": "never"
+        "other-input": "never",
+        "ignore-flyout": "never"
       }
     }
   ],
