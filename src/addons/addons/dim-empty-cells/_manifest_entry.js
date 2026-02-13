@@ -56,7 +56,7 @@ const manifest = {
       "allowTransparency": false
     },
     {
-      "dynamic": false,
+      "dynamic": true,
       "name": "Warning Transparency",
       "id": "warning-transparency",
       "type": "integer",
@@ -498,6 +498,7 @@ const manifest = {
   ],
   "presets": [
     {
+      "dynamic": true,
       "name": "Light mode",
       "id": "default",
       "description": "The regular ones.",
@@ -523,6 +524,7 @@ const manifest = {
       }
     },
     {
+      "dynamic": true,
       "name": "Dark mode",
       "id": "dark",
       "description": "The dark ones.",
@@ -548,6 +550,7 @@ const manifest = {
       }
     },
     {
+      "dynamic": true,
       "name": "Black background mode",
       "id": "black",
       "description": "The one suits well with black ground rainbow texts.",
