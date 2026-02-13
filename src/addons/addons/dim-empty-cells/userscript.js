@@ -32,12 +32,12 @@ export default async function ({ addon , console }) {
         }
         // blocks not found are handled later
       } else if (parent.getCategory() === "data") {
-        if (block.type === "math_integer") {
-          return "math-calculation-input";
+        if (block.type === "math_number") {
+          return "id-input";
         }
         return "data-input";
-      } else if (parent.getCategory() === "data-list") {
-        if (block.type === "math_integer" || block.type === "math_whole_number") {
+      } else if (parent.getCategory() === "data-lists") {
+        if (block.type === "math_integer") {
           return "id-input";
         }
         return "data-input";
@@ -52,7 +52,7 @@ export default async function ({ addon , console }) {
           return "ask-input";
         }
         // handle other sensing blocks later
-      } else if (parent.getCategory() === "sound") {
+      } else if (parent.getCategory() === "sounds") {
         return "sound-input";
       } else if (parent.getCategory() === "looks") {
         if (block.type === "text") {
