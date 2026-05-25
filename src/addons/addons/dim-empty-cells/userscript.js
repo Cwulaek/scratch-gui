@@ -10,6 +10,7 @@ export default async function ({ addon , console }) {
     const parent = block.getParent();
     if (parent && parent.getCategory()) {
       if (parent.getCategory() === "operators") {
+        // Todo: distinguish sin,acos,.. from abs,floor,sqrt
         if (
           parent.type === "operator_equals"
           || parent.type === "operator_lt"
